@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNI | Infraestructura y Generación Eléctrica</title>
+    <meta name="description"
+        content="SNI diseña, construye y opera proyectos de infraestructura eléctrica, generación y eficiencia energética que fortalecen la confiabilidad del sistema eléctrico en México.">
+    <link rel="canonical" href="https://www.sni.mx/">
+    <link rel="icon" type="image/png" href="assets/Logo%20Icon.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sni.mx/">
+    <meta property="og:title" content="SNI | Infraestructura y Generación Eléctrica">
+    <meta property="og:description"
+        content="Soluciones integrales en infraestructura energética, generación y eficiencia para un futuro más confiable.">
+    <meta property="og:image" content="https://www.sni.mx/assets/sni_hero.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.sni.mx/">
+    <meta property="twitter:title" content="SNI | Infraestructura y Generación Eléctrica">
+    <meta property="twitter:description"
+        content="Soluciones integrales en infraestructura energética, generación y eficiencia para un futuro más confiable.">
+    <meta property="twitter:image" content="https://www.sni.mx/assets/sni_hero.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html#home" class="logo">
+                <img src="assets/Logo 4.png" alt="SNI Logo"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                <span
+                    style="display:none; font-family: 'Space Grotesk'; font-weight: 700; font-size: 2rem; letter-spacing: -1px;">SNI</span>
+            </a>
+
+            <!-- GSAP -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link">Nosotros</a></li>
+                    <li><a href="#services" class="nav-link">Soluciones</a></li>
+                    <li><a href="#values-prop" class="nav-link">Ventajas</a></li>
+                    <li><a href="#corporate-values" class="nav-link">Valores</a></li>
+                    <li><a href="#contact" class="nav-link">Contacto</a></li>
+                    <li class="mobile-only" style="margin-top: 1rem;"><a href="#contact" class="btn btn-primary"
+                            style="width: 100%; justify-content: center;">Solicitar Consulta</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+
+            <a href="#contact" class="btn btn-primary">Solicitar Consulta</a>
+        </div>
+    </header>
+
+    <!-- Cookie Banner -->
+    <div id="cookieBanner" class="cookie-banner">
+        <div class="cookie-content">
+            <p style="margin: 0;">Utilizamos cookies propias y de terceros para mejorar nuestros servicios. Si continúa
+                navegando, consideramos que acepta su uso. <a href="cookies.html"
+                    style="text-decoration: underline; color: var(--color-primary);">Ver Política de Cookies</a></p>
+            <button id="acceptCookies" class="btn btn-primary"
+                style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Aceptar</button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-eyebrow">Ingeniería y Eficiencia</span>
+                <h1 class="hero-title">
+                    Innovación y precisión <br>
+                    <span class="text-gradient">energética</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    Infraestructura crítica, generación y eficiencia operativa.
+                </h2>
+                <p class="hero-desc">
+                    Fusionamos ingeniería de vanguardia con fortaleza operativa. Transformamos desafíos complejos en
+                    activos energéticos seguros, rentables y de alto desempeño.
+                </p>
+                <div class="hero-actions">
+                    <a href="#services" class="btn btn-primary">Conoce nuestras soluciones</a>
+                    <a href="#contact" class="btn btn-outline">Hablemos de tu proyecto</a>
+                </div>
+            </div>
+
+            <!-- Hero Visual (Right Side) -->
+
+            <div class="hero-visual">
+                <!-- Background Logo -->
+                <img src="assets/Logo Icon.png" alt="" class="hero-logo-bg">
+
+                <!-- Carousel Items -->
+                <!-- Item A: Grid (Starts Slot 1) -->
+                <div class="floating-img-container carousel-item slot-1">
+                    <img src="assets/red_electrica.png" alt="Infraestructura SNI" class="hero-floating-img">
+                </div>
+
+                <!-- Item B: Solar (Starts Slot 2) -->
+                <div class="floating-img-container carousel-item slot-2">
+                    <img src="assets/modern_solar_plant_vertical.png" alt="Generación de Energía Solar"
+                        class="hero-floating-img">
+                </div>
+
+                <!-- Item C: Engineers (Starts Slot 3 - The One That Scrolls) -->
+                <!-- ID is crucial for Script Targeting -->
+                <div class="floating-img-container carousel-item slot-3" id="hero-start-pos">
+                    <img id="anim-img" src="assets/hero_engineer_mexican.png" alt="Ingeniero SNI"
+                        class="hero-floating-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="about-split-layout">
+                <!-- Left Column: Content -->
+                <div class="about-text-col">
+                    <div class="section-header text-left">
+                        <span class="eyebrow">Nosotros</span>
+                        <h2 class="section-title">Quiénes somos</h2>
+                        <p class="section-desc">
+                            SNI es una empresa mexicana especializada en infraestructura energética, generación
+                            eléctrica,
+                            energía distribuida, eficiencia energética y operación y mantenimiento (O&M). Acompañamos a
+                            clientes
+                            públicos y privados en el desarrollo de proyectos que exigen rigor técnico, solidez
+                            financiera y
+                            ejecución ágil.
+                        </p>
+                    </div>
+
+                    <div class="grid-2 gap-2 mt-2" style="grid-template-columns: 1fr;">
+                        <div class="card p-2" style="height: auto;">
+                            <h3 class="card-title text-primary mb-1">Misión</h3>
+                            <p class="text-muted text-sm">
+                                Diseñar, desarrollar e implementar soluciones integrales de infraestructura y gestión
+                                energética que, mediante la construcción, modernización y mantenimiento, fortalezcan la
+                                confiabilidad, seguridad y eficiencia de sistemas eléctricos.
+                            </p>
+                        </div>
+                        <div class="card p-2" style="height: auto;" id="vision-card">
+                            <h3 class="card-title text-primary mb-1">Visión</h3>
+                            <p class="text-muted text-sm">
+                                Consolidarnos como el socio estratégico líder en infraestructura energética, generación
+                                eléctrica y eficiencia energética, reconocido por su calidad de ejecución y por su
+                                capacidad de integrar ingeniería, financiamiento y agilidad operativa para impulsar una
+                                red eléctrica más moderna, limpia y eficiente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Image Destination -->
+                <div class="about-img-col">
+                    <div id="about-target-box" class="about-img-placeholder">
+                        <!-- Image will land here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-3">
+                <span class="eyebrow">Nuestras Soluciones</span>
+                <h2 class="section-title">Soluciones Integrales</h2>
+                <p class="section-desc max-w-3xl mx-auto">
+                    En SNI transformamos la forma en que las organizaciones diseñan, construyen y operan su
+                    infraestructura eléctrica. Nuestras soluciones cubren todo el ciclo del proyecto: ingeniería,
+                    procura, construcción, puesta en servicio, operación y mantenimiento.
+                </p>
+            </div>
+
+            <!-- Featured Projects Grid -->
+            <div class="featured-projects-grid">
+                <!-- Project 1: Infrastructure -->
+                <div class="project-card">
+                    <img src="assets/project_1.jpg" alt="Infraestructura Energética" class="project-bg">
+                    <div class="project-overlay"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">Infraestructura Energética</h3>
+                        <p class="project-desc">Diseño, ingeniería, construcción y modernización de subestaciones,
+                            líneas de transmisión y redes de distribución.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2: Generation -->
+                <div class="project-card">
+                    <img src="assets/project_2.jpg" alt="Generación Eléctrica" class="project-bg">
+                    <div class="project-overlay"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">Generación Eléctrica</h3>
+                        <p class="project-desc">Desarrollo e implementación de proyectos de generación, desde estudios e
+                            ingeniería hasta construcción y puesta en servicio.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3: Distributed -->
+                <div class="project-card">
+                    <img src="assets/project_3.jpg" alt="Energía Distribuida" class="project-bg">
+                    <div class="project-overlay"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">Energía Distribuida</h3>
+                        <p class="project-desc">Soluciones <i>behind the meter</i> para clientes industriales: plantas
+                            de
+                            respaldo, almacenamiento, microrredes y sistemas híbridos.</p>
+                    </div>
+                </div>
+
+                <!-- Project 4: Efficiency -->
+                <div class="project-card">
+                    <img src="assets/project_4.png" alt="Eficiencia Energética" class="project-bg">
+                    <div class="project-overlay"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">Eficiencia Energética</h3>
+                        <p class="project-desc">Diagnósticos y auditorías, ahorro en sistemas eléctricos/mecánicos,
+                            gestión de demanda y optimización de costos.</p>
+                    </div>
+                </div>
+
+                <!-- Project 5: O&M -->
+                <div class="project-card">
+                    <img src="assets/project_5.png" alt="Operación y Mantenimiento" class="project-bg">
+                    <div class="project-overlay"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">Operación y Mantenimiento</h3>
+                        <p class="project-desc">O&M preventivo, predictivo y correctivo orientado a máxima
+                            disponibilidad, menor falla y mayor vida útil de activos.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Value Proposition -->
+    <section id="values-prop" class="section-padding">
+        <div class="container">
+            <div class="row align-center">
+                <div class="col-12 text-center mb-3">
+                    <span class="eyebrow">Nuestras Ventajas</span>
+                    <h2 class="section-title">¿Por qué SNI?</h2>
+                    <p class="section-desc mx-auto">
+                        Combinamos capacidades técnicas, financieras y de gestión para entregar soluciones a tiempo y
+                        dentro de presupuesto.
+                    </p>
+                </div>
+            </div>
+            <div class="cards-container">
+                <div class="stack-card">
+                    <h4>Capacidad integral</h4>
+                    <p class="text-body">Ofrecemos el ciclo completo del proyecto: ingeniería, procura, construcción,
+                        puesta en servicio y mantenimiento.</p>
+                </div>
+                <div class="stack-card">
+                    <h4>Confiabilidad y seguridad</h4>
+                    <p class="text-body">Nuestros proyectos están diseñados para operar sin fallas, cumpliendo con los
+                        más altos estándares de seguridad.</p>
+                </div>
+                <div class="stack-card">
+                    <h4>Solvencia financiera</h4>
+                    <p class="text-body">Contamos con la solidez para estructurar y financiar proyectos de gran
+                        envergadura.</p>
+                </div>
+                <div class="stack-card">
+                    <h4>Agilidad operativa</h4>
+                    <p class="text-body">Somos flexibles y respondemos con rapidez a los cambios y desafíos técnicos.
+                    </p>
+                </div>
+                <div class="stack-card">
+                    <h4>Gestión profesional</h4>
+                    <p class="text-body">Controlamos cada aspecto: tiempos, costos, alcance y riesgos para garantizar el
+                        éxito.</p>
+                </div>
+                <div class="stack-card">
+                    <h4>Alianzas estratégicas</h4>
+                    <p class="text-body">Colaboramos con los mejores fabricantes y socios del sector energético.</p>
+                </div>
+                <!-- Final Logo Card -->
+                <div class="stack-card final-logo-card">
+                    <img src="assets/Asset 1.png" alt="SNI Cultivo" class="final-card-img">
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Future Vision Section (Replicated from Reference) -->
+    <section id="future-vision" class="future-section">
+        <div class="future-overlay"></div>
+        <div class="future-content">
+            <h2 class="future-title">
+                Innovación y<br>
+                <span>Precisión</span><br>
+                <span class="color-highlight">Energética</span>
+            </h2>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <!-- Values Section -->
+    <section id="corporate-values" class="section-padding bg-primary text-white">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="eyebrow text-accent">Nuestros Valores</span>
+                <h2 class="section-title text-white">Lo que nos guía</h2>
+                <p class="text-muted-light mx-auto max-w-2xl">
+                    Nuestra forma de trabajar está sustentada en valores que se traducen en decisiones concretas.
+                </p>
+            </div>
+
+            <!-- 2-Column Grid Wrapper -->
+            <!-- ID 'valuesTimeline' kept for JS ScrollTrigger -->
+            <div class="culture-grid" id="valuesTimeline">
+
+                <!-- Column 1 -->
+                <div class="timeline-context">
+                    <div class="timeline-fill"></div>
+                    <div class="values-list">
+                        <div class="value-row">
+                            <strong class="text-accent">Profesionalismo:</strong>
+                            <span class="text-white-opaque">Rigurosidad técnica y cumplimiento en cada entrega.</span>
+                        </div>
+                        <div class="value-row">
+                            <strong class="text-accent">Enfoque en resultados:</strong>
+                            <span class="text-white-opaque">Generar ahorros tangibles y valor real para el
+                                cliente.</span>
+                        </div>
+                        <div class="value-row">
+                            <strong class="text-accent">Innovación:</strong>
+                            <span class="text-white-opaque">Implementación de nuevas tecnologías y soluciones
+                                avanzadas.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="timeline-context">
+                    <div class="timeline-fill"></div>
+                    <div class="values-list">
+                        <div class="value-row">
+                            <strong class="text-accent">Transparencia:</strong>
+                            <span class="text-white-opaque">Ética, claridad y cumplimiento regulatorio estricto.</span>
+                        </div>
+                        <div class="value-row">
+                            <strong class="text-accent">Agilidad:</strong>
+                            <span class="text-white-opaque">Respuesta inmediata en ingeniería y ejecución de
+                                obra.</span>
+                        </div>
+                        <div class="value-row">
+                            <strong class="text-accent">Seguridad:</strong>
+                            <span class="text-white-opaque">Prioridad absoluta en la seguridad industrial y
+                                protección.</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (Redesign with Map) -->
+    <section id="contact" class="section-padding bg-black relative overflow-hidden">
+        <!-- Header / Compact Button Container -->
+        <div class="contact-header absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+            <div class="text-center pointer-events-auto z-10">
+                <h2 class="section-title text-white mb-6">Contáctanos</h2>
+                <p class="text-white mb-8 text-lg leading-relaxed font-light"
+                    style="opacity: 0.9; max-width: 700px; margin-left: auto; margin-right: auto;">
+                    Conversemos sobre el futuro de su infraestructura energética. En SNI estamos listos para actuar como
+                    su socio estratégico, brindándole soluciones integrales que garantizan la eficiencia, seguridad y
+                    rentabilidad que sus proyectos más ambiciosos requieren.
+                </p>
+                <br>
+                <a href="mailto:administracion@sni.mx" class="btn-pill-small">
+                    Contáctanos
+                </a>
+            </div>
+        </div>
+
+        <!-- Background Map Container (Reduced to 70% size) -->
+        <div class="map-container relative mx-auto w-full pointer-events-none">
+            <img src="assets/world-map-dots.png" class="w-full h-full object-contain opacity-40 mix-blend-screen"
+                alt="World Map" style="max-width: 65%; height: 65%;">
+
+            <!-- Interactive Pin (Mexico City approx) -->
+            <div class="map-pin pointer-events-auto" style="top: 51%; left: 30.8%;">
+                <div class="pin-pulse"></div>
+                <div class="pin-dot"></div>
+
+                <!-- Tooltip -->
+                <div class="map-tooltip">
+                    <strong class="block text-white mb-1">Ciudad de México</strong>
+                    <br><a href="mailto:administracion@sni.mx"
+                        class="block text-accent text-sm hover:underline">administracion@sni.mx</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand -->
+                <div class="footer-col brand-col">
+                    <img src="assets/Logo blanco grande.png" alt="SNI" class="footer-logo">
+                    <p class="footer-tagline">
+                        Soluciones integrales de infraestructura, generación y eficiencia para un futuro energético más
+                        confiable.
+                    </p>
+                </div>
+
+                <!-- Column 2: Company -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Empresa</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#about">Nosotros</a></li>
+                        <li><a href="#values-prop">Ventajas</a></li>
+                        <li><a href="#corporate-values">Valores</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Solutions -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Soluciones</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#services">Infraestructura</a></li>
+                        <li><a href="#services">Generación</a></li>
+                        <li><a href="#services">Eficiencia</a></li>
+                        <li><a href="#services">Mantenimiento</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contacto</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="mailto:administracion@sni.mx">administracion@sni.mx</a></li>
+                        <li><a href="#contact" class="footer-cta-link">Solicitar Consulta &rarr;</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Soluciones Naturales Intercontinental. Todos los derechos reservados.
+                </p>
+                <div class="footer-legal">
+                    <a href="cookies.html">Política de Cookies</a>
+                    <span class="separator">|</span>
+                    <a href="privacy.html">Aviso de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
